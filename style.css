@@ -1,34 +1,164 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    background: #f8f9fa;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Шапка */
 header {
-    background: #0077cc;
+    background: #004080;
     color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
+    position: relative;
 }
 
+header h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+/* Логотип */
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Навигация */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 15px;
+    background: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #0055aa;
+}
+
+/* Контентные блоки */
 section {
     padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: white;
-    margin-bottom: 10px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Заголовки */
 h1, h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
+/* Подвал */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background: #222;
     color: white;
+    margin-top: 30px;
+}
+
+
+.logo {
+    width: 100px;   /* можно увеличить, например 150px */
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.info-block {
+    background: #e8f0fe;      /* одинаковый светлый фон для всех блоков */
+    padding: 25px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    line-height: 1.7;          /* читаемая высота строки */
+    font-size: 1.1rem;          /* шрифт чуть больше */
+    color: #333;
+}
+
+.info-block h2 {
+    margin-bottom: 15px;
+}
+
+
+.meeting-section, .meeting-info {
+    background: #e8f0fe;        /* светлый голубой фон */
+    padding: 25px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.1rem;           /* текст побольше */
+    color: #333;
+}
+
+.meeting-section h2 {
+    margin-bottom: 15px;
+}
+
+.meeting-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.meeting-section ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contact-section, .contact-info {
+    background: #e8f0fe;
+    padding: 25px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-section h2 {
+    margin-bottom: 15px;
+}
+
+.contact-section ul {
+    list-style-type: disc;  /* точки перед пунктами */
+    padding-left: 20px;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
 }
