@@ -178,9 +178,11 @@ footer {
     }
 
     .logo {
-        position: static;         /* убираем абсолютное позиционирование */
+        position: static;
         margin-bottom: 10px;
-        width: 140px;              /* логотип поменьше для мобильных */
+        width: 20%;        /* Логотип занимает 30% ширины экрана */
+        max-width: 150px;  /* но не больше 180px */
+        height: auto;
     }
 
     nav {
@@ -196,4 +198,5 @@ footer {
         font-size: 0.9rem;
     }
 }
+
 
